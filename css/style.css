@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+
+@import "circle.css";
+@import "spacing.css";
+
+body {
+  margin-inline: 5rem;
+  background: #ecf0f1;
+  color: #444;
+  font-family: 'Lato', Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.employer
+.position {
+  display: flex;
+  align-items: baseline;
+}
+
+.skills-container {
+  display: flex;
+  flex-flow: column wrap;
+  /* justify-content: space-between; */
+  height: 20rem;;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  width: 7rem;
+  align-items: center;
+}
