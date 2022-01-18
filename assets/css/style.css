@@ -1,12 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 
+@import "colors.css";
 @import "circle.css";
 @import "spacing.css";
+@import "tab.css";
 
 body {
   margin-inline: 5rem;
-  background: #ecf0f1;
-  color: #444;
+  background: var(--grey);
+  color: var(--light-blue);
   font-family: 'Lato', Tahoma, Geneva, sans-serif;
   font-size: 16px;
   padding: 10px;

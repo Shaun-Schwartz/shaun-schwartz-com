@@ -877,3 +877,15 @@
 .c100.orange.dark:hover > span {
   color: #e08833;
 }
+.c100.pink .bar, .c100.pink .fill {
+  border-color: var(--light-pink) !important;
+}
+.c100.pink:hover > span {
+  color: var(--light-pink);
+}
+.c100.pink.dark .bar, .c100.pink.dark .fill {
+  border-color: var(--light-pink) !important;
+}
+.c100.pink.dark:hover > span {
+  color: var(--light-pink);
+}
