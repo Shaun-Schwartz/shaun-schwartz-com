@@ -1,0 +1,5 @@
+.employer
+.position {
+  display: flex;
+  align-items: baseline;
+}

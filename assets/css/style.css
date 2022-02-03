@@ -1,12 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 
-@import "colors.css";
+@import "about.css";
 @import "circle.css";
+@import "colors.css";
+@import "employment.css";
+@import "skills.css";
 @import "spacing.css";
 @import "tab.css";
 
 body {
-  margin-inline: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
   background: var(--grey);
   color: var(--light-blue);
   font-family: 'Lato', Tahoma, Geneva, sans-serif;
@@ -14,26 +18,46 @@ body {
   padding: 10px;
 }
 
-.contact {
+.header {
   text-align: center;
 }
 
-.employer
-.position {
-  display: flex;
-  align-items: baseline;
+a,
+a:hover,
+a:visited {
+  color: var(--light-blue);
+  /* text-decoration: none; */
 }
 
-.skills-container {
-  display: flex;
-  flex-flow: column wrap;
-  /* justify-content: space-between; */
-  height: 20rem;;
+.fade-in-text {
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
 }
 
-.skill-container {
-  display: flex;
-  flex-direction: column;
-  width: 7rem;
-  align-items: center;
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

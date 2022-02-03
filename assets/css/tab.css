@@ -6,21 +6,17 @@
 
 .tab-nav-item {
   font-size: 20px;
-  border-color: darkgrey;
+  border-color: var(--very-dark-grey);
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-radius: 1px;
   margin-right: 5px;
+  text-decoration: none;
 }
 
-.selected-tab {
-  color: var(--baby-blue);
-  font-size: 22px;
-  border-width: 2px;
-  border-radius: 2px;
-  padding-top: 0px;
-}
-
-.hidden-tab-content {
-  display: none;
+.tab-nav-item:hover {
+  border: none;
+  margin-left: 2px;
+  margin-right: 7px;
+  margin-top: 2px;
 }
