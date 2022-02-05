@@ -12,6 +12,7 @@
   --grey: #464646;
   --very-dark-grey: #333333;
   --light-blue: #6dcff6;
+  --small-screen: 600px;
 }
 
 @font-face {
@@ -34,6 +35,14 @@ body {
 
 .header {
   text-align: center;
+}
+@media only screen and (max-width: 599px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-bottom: 3rem;
+  }
 }
 
 a,
@@ -102,15 +111,16 @@ a:visited {
 /* Skills */
 .skills-container {
   display: flex;
-  flex-flow: column wrap;
-  height: 20rem;;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: flex-start;
 }
 
 .skill-container {
-  display: flex;
+  /* flex: 1 0 20%; */
   flex-direction: column;
-  width: 7rem;
   align-items: center;
+  margin-right: 3rem;
 }
 
 
@@ -119,6 +129,15 @@ a:visited {
   display: flex;
   height: 35px;
   justify-content:start;
+}
+@media only screen and (max-width: 599px) {
+  .tab-nav-container {
+    flex-direction: column;
+    width: 8.5rem;
+    position: absolute;
+    top: 0rem;
+    margin-top: 2rem;
+  }
 }
 
 .tab-nav-item {
@@ -138,6 +157,20 @@ a:visited {
   margin-top: 2px;
 }
 
+@media only screen and (max-width: 599px) {
+  .tab-nav-item {
+    margin-top: 0.4rem;
+    padding-bottom: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .tab-nav-item:hover {
+    margin-top: 0.5rem;
+    padding-bottom: 0.32rem;
+    padding-top: 0.2rem;
+  }
+}
 
 /* Spacing */
 .px-5 {
